@@ -1,7 +1,5 @@
 import { BsMusicNoteBeamed } from "react-icons/bs"
 
-
-
 const DisplayTracks = ({ currentTrack, audioRef, setDuration, progressBarRef, handleNext }) => {
     const onLoadMetadata = () => {
         const seconds = audioRef.current.duration;

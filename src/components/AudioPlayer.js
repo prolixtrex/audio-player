@@ -1,6 +1,5 @@
 import { tracks } from "../data/track";
 import { useRef, useState } from "react";
-import '../styles/index.css';
 import '../styles/customize-progress-bar.css';
 
 //import components
@@ -50,7 +49,7 @@ const AudioPlayer = () => {
                 <DisplayTracks {...{ currentTrack, audioRef, setDuration, progressBarRef, handleNext }} />
                 <Controls {...{ togglePlayPause, isPlaying, audioRef, duration, setTimeProgress, progressBarRef, tracks, trackIndex, setTrackIndex, setCurrentTrack, handleNext, setRandom, random }} />
                 <ProgressBar {...{ progressBarRef, audioRef, timeProgress, duration }} />
-                <Lists {...{ tracks, togglePlayPause, isPlaying, setCurrentTrack, setTrackIndex, currentTrack }} />
+                <Lists {...{ tracks, togglePlayPause, isPlaying, setCurrentTrack, setTrackIndex, currentTrack, setIsPlaying }} />
             </div>
         </div>
     )

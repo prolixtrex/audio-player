@@ -19,8 +19,6 @@ import {
     IoMdVolumeOff
 } from "react-icons/io";
 
-
-
 const Controls = ({ togglePlayPause, isPlaying, audioRef, duration, setTimeProgress, progressBarRef, tracks, trackIndex, setTrackIndex, setCurrentTrack, handleNext, setRandom, random }) => {
 
     const [volume, setVolume] = useState(60);
@@ -71,8 +69,6 @@ const Controls = ({ togglePlayPause, isPlaying, audioRef, duration, setTimeProgr
         }
         playAnimationRef.current = requestAnimationFrame(repeat);
     }, [isPlaying, audioRef, repeat]);
-
-
 
     return (
         <div className="controls-wrapper">
